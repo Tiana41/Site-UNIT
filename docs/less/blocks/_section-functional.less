@@ -1,0 +1,104 @@
+.section-functional {
+    padding: 70px 0 69px;    
+
+      // Медиа запрос для планшетов и выше
+      @media (min-width: 768px) {
+        padding: 70px 0 62px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 107px 0 60px;
+        background-image: url("/img/header/bg-particles.svg");
+        background-repeat: no-repeat;
+        background-position: center 5px;
+        background-size: auto;
+    }
+}
+
+.section-functional_title {
+    margin-bottom: 33px;
+    text-align: center;
+
+      // Медиа запрос для планшетов и выше
+      @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 72px;
+    }
+}
+
+.section-functional_header {
+    margin-bottom: 30px;
+    text-align: center;
+
+      // Медиа запрос для планшетов и выше
+      @media (min-width: 768px) {
+        margin-bottom: 45px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 85px;
+        text-align: center;
+    }
+}
+
+.section-functional_benefits {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      // Медиа запрос для планшетов и выше
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.section-functional_benefits > * {
+    width: 100%;
+    max-width: 380px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+     
+       // Медиа запрос для планшетов и выше
+      @media (min-width: 768px) {
+        max-width: unset;
+        width: calc( ~"50% - 16px" ); 
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {        
+        width: 280px;
+    }
+  }
+
+     br {
+        display: none;
+        // Медиа запрос для планшетов и выше
+        @media (min-width: 768px) {
+            display: none;
+        }
+    
+        // Медиа запрос для десктопов
+        @media (min-width: 1200px) {
+            display: block;
+        }   
+ 
+  }

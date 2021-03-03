@@ -1,0 +1,352 @@
+.header {
+    position: relative;
+    height: auto; 
+    background-color: #414a4f;
+    color: #ffffff;
+    background-image: url("/img/header/img-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+      // медиа запрос для планшетов и выше //
+      @media (min-width: 768px) {
+          height: 568px;
+          min-height: auto;
+        
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        height: 870px; 
+    }
+
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    top: 0;
+    left: 0; 
+    padding-top: 100px;
+    padding-bottom: 65px;    
+    width: 100%;
+    height: 100%;    
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center {
+    padding-bottom: 0;
+
+      // медиа запрос для планшетов и выше //
+      @media (min-width: 768px) {
+        padding-bottom: 57px;
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        padding-bottom: 38px;
+    }
+}
+
+.header-logo {
+    font-size: 62px;
+    letter-spacing: 12.4px;    
+    margin-bottom: -6px;
+    text-align: center;    
+    font-weight: 700;
+    text-transform: uppercase;       
+    left: 7px;
+    position: relative;
+    top: -16px;
+    
+       // медиа запрос для планшетов и выше //
+         @media (min-width: 768px) {
+        font-size: 82px;
+        letter-spacing: 16.4px;
+        position: relative;
+        left: 10px;
+        top: -6px;
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        font-size: 96px;
+        letter-spacing: 19.2px;
+        margin-bottom: 17px;
+        position: relative;
+        left: 10px;
+        top: -28px;
+    }
+}
+
+.header-desc {
+    max-width: 726px;   
+    text-align: center;   
+    font-size: 16px;
+    font-weight: 500;  
+    margin-bottom: 23px;
+    font-family: Montserrat; 
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    
+    
+    // медиа запрос для планшетов и выше //
+    @media (min-width: 768px) {
+        margin-bottom: 52px;
+        width: 566px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        font-size: 20px; 
+        line-height: 30px; 
+        font-weight: 700;
+        letter-spacing: normal;
+        width: 100%;
+        margin-bottom: 68px;
+    }
+
+}
+
+.header-desc p {
+    margin-bottom: 15px;
+    // медиа запрос для планшетов и выше //
+    @media (min-width: 768px) {
+        
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        margin-bottom: 15px; 
+    }  
+  
+}
+
+.header-letter {   
+    letter-spacing: 2px;    
+}
+
+.header-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+
+    @media (min-width: 520px) {
+        width: 490px;      
+    }
+
+    // медиа запрос для планшетов и выше //
+    @media (min-width: 768px) {
+        flex-direction: row;
+        width: auto;      
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+
+.header-form-input {
+    width: 100%;
+    margin-bottom: 10px;
+
+    // медиа запрос для планшетов и выше //
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+         width: 200px;
+         margin-right: 20px;
+    }
+}
+
+.header-form-submit {
+    .button-submit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.input {       
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);    
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;    
+    transition: background-color 0.2s ease;
+
+    &::placeholder {
+        color: #ffffff;
+    }
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.7);    
+    }   
+}
+
+.button-submit {  
+    padding: 0 30px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #50e3a4;  
+    font-weight: 700;
+   
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 2.86;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+   
+    transition: background-color 0.2s ease;
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: darken(#50e3a4, 20%);        
+    }
+}
+
+.header-scroll {
+    display: none;      
+
+      // медиа запрос для планшетов и выше //
+      @media (min-width: 768px) {
+        display: none;
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 48px;
+        bottom: 121px;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        border-radius: 50%;
+        border: none; 
+        transition: all 0.2s ease-in;
+       
+
+        &:hover {
+            outline: none;
+            background-color: softlight(#c9c0ba, #000000);
+        }
+    }
+
+}
+
+.relative {
+    position: relative;
+    top: 0;
+}
+
+.header-top-buttons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-nav-button {
+    position: absolute;
+    top: 20px;
+    right: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none; 
+    border-radius: 50%;
+
+      // медиа запрос для планшетов и выше //
+      @media (min-width: 768px) {
+        left: 20px;
+        right: auto;
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        top: 59px;
+        left: 68px;
+         right: auto;
+
+         cursor: pointer;
+         transition: background-color 0.2s ease; 
+
+    &:hover {
+        outline: none;
+        background-color: softlight(#c9c0ba, #000000);        
+    }
+  }
+} 
+
+.header-search-button {
+    display: none;  
+    
+      // медиа запрос для планшетов и выше //
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;        
+        top: 20px;
+        right: 20px;
+
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.5);  
+        border: none;
+        border-radius: 50%;
+
+        display: block;
+    }
+
+    // медиа запрос для dektstop //
+    @media (min-width: 1200px) {
+        position: absolute;
+        top: 60px;
+        right: 70px;
+        
+        display: block;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+    &:hover {
+        outline: none;
+        background-color: softlight(#c9c0ba, #000000);        
+    }
+
+    }
+}

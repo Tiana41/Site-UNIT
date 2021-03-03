@@ -1,0 +1,183 @@
+.section-fokus {
+    position: relative;
+    padding-top: 67px;
+    padding-bottom: 30px;
+    border-top: 1px solid #e1e1e1;
+    overflow: hidden;
+     // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        padding-top: 53px;
+        padding-bottom: 0;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        position: relative;
+        padding-top: 81px;
+        border-top: 1px solid #e1e1e1;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+}
+
+.section-fokus::before {
+    content: "";
+    position: absolute; 
+    left: 50%;
+    top: 0;
+    width: 68px;
+    height: 68px; 
+    background-color: #a4eecb; 
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        display: block;
+        content: "";
+        position: absolute; 
+        left: 0;
+        right: 0;
+        top: 50%;
+        width: 132px;
+        height: 132px; 
+        background-color: #a4eecb; 
+        transform: translate(50%, -50%) rotate(45deg);
+    }
+}
+
+.section-functional-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.section-functional-img-wrapper {
+   position: relative;
+    width: 290px;
+    height: 100%; 
+
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        position: relative;
+        width: 287px;
+        height: 510px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        position: relative;
+        width: 470px;
+        height: 731px;
+    }
+
+    img {
+       
+        @media (min-width: 768px) {
+            height: 100%;
+        }
+    
+        // Медиа запрос для десктопов
+        @media (min-width: 1200px) {   
+           height: unset;
+        }
+    }
+}
+
+.section-functional-img {
+    position: static;
+    max-width: 100%;
+
+
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {     
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: unset;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: unset;
+    }
+}
+
+.section-functional-content {
+    width: 280px;
+    padding-bottom: 50px;
+    text-align: center;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        text-align: left;
+        width: 384px;
+        padding-bottom: 138px;
+        margin-right: 23px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {  
+      /*  margin-left: auto; */
+        width: 470px;
+        padding-bottom: 130px;
+        margin-right: 0;
+    }
+    
+    .section-title {
+        text-align: center; 
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 2.8px;
+        margin-bottom: 30px;
+        // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+         text-align: left;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        margin-bottom: 32px;
+    }
+    }
+
+    .section-header {
+        text-align: center;      
+        margin-bottom: 36px;
+        // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        margin-bottom: 15px;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        text-align: left;        
+        line-height: 58px;
+        margin-bottom: 45px;
+    }
+    }
+}

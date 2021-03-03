@@ -1,0 +1,203 @@
+.section-footer {  
+    padding-top: 58px;
+    padding-bottom: 67px; 
+    background-color: #1a1a1a; 
+
+    // Медиа запрос для планшетов и выше //
+    @media (min-width: 768px) {  
+        padding-top: 71px;
+        padding-bottom: 67px; 
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        padding-top: 78px;
+        padding-bottom: 67px; 
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin-bottom: 39px;  
+    
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) { 
+        display: flex;       
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 52px;  
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        flex-direction: row;
+        margin-bottom: 55px;     
+    }
+}
+
+.footer-contacts {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 51px;
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) {  
+        margin-bottom: 50px;
+        flex-direction: row;
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        display: flex;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.footer-icons  {
+    display: flex;  
+    padding-left: 15px;
+    padding-right: 15px;
+
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) {  
+       
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+           
+    }
+} 
+
+.social-icons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(49, 49, 49, 0.9);
+    border-radius: 50px;
+    border: none; 
+    transition: all 0.2s ease-in;
+    text-align: center;
+    margin-right: 22px;
+    
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) {  
+        margin-right: 32px;
+
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: rgba(49, 49, 49, 0.9);
+        border-radius: 50px;
+        border: none; 
+        transition: all 0.2s ease-in;
+        text-align: center;
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &:hover {
+        outline: none;
+        background-color: softlight(#8a8683, #313131);
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+} 
+
+.footer-botton {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) {  
+         margin-bottom: 0;
+        margin-right: 39px;
+       
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        margin-right: 38px;
+    }
+
+     &:hover {    
+        color: softlight(#858382, #ffffff);;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }       
+}
+ 
+.footer-copyright-name {
+    font-size: 14px;   
+    color: rgba(255, 255, 255, 0.302);
+    line-height: 1.7;
+    text-align: center;
+    font-weight: 500;
+    width: 200px;
+    margin: 0 auto;
+
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) {  
+      
+
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.footer-letter {
+    letter-spacing: 1.4px;
+    font-weight: 700;
+
+       // Медиа запрос для планшетов и выше //
+       @media (min-width: 768px) {  
+       
+
+    }
+   
+       // Медиа запрос для десктопов //
+       @media (min-width: 1200px) { 
+        letter-spacing: 1.4px;
+        font-weight: 700;
+    }
+}
+

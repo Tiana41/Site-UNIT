@@ -1,0 +1,189 @@
+.section-content-task {
+    position: relative;
+    padding: 69px 0px 44px;
+    overflow: hidden;
+     // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        padding-top: 65px;
+        padding-bottom: 42px; 
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        position: relative;
+        padding-top: 94px;
+        padding-bottom: 25px;
+    }
+     
+}
+
+.section-content-task::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;  
+    width: 67px;
+    height: 67px;  
+    background-color: #a4eecb; 
+    transform: translate(-50%, -50%) rotate(45deg);
+     // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        display: none;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 132px;
+        height: 132px; 
+        background-color: #a4eecb; 
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+}
+
+.content-task {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+     // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center; 
+        padding-left: 30px;
+        padding-right: 30px;          
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        padding-left: 100px;
+        padding-right: 146px;  
+    }
+ 
+}
+
+.task-item-text {
+    width: 275px; 
+    text-align: center; 
+    margin-bottom: 50px;  
+
+       // Медиа запрос для планшетов и выше
+       @media (min-width: 768px) {
+        width: 376px;
+        text-align: left;
+        margin-bottom: 75px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        width: 440px;
+        text-align: left; 
+        margin-bottom: 0;
+      }   
+
+    .section-title {
+        color: #50e3a4;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;      
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;      
+        letter-spacing: 2.8px;
+        margin-bottom: 25px;    
+                // Медиа запрос для планшетов и выше
+            @media (min-width: 768px) {
+                text-align: left;
+                margin-bottom: 32px;
+            }
+
+            // Медиа запрос для десктопов
+            @media (min-width: 1200px) {
+                text-align: left;
+                font-size: 14px;
+                margin-bottom: 31px;
+            }    
+    }      
+
+    .section-header {          
+        color: #2e2e2e;       
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 36px;         
+
+     // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        font-size: 42px;
+        line-height: 50px;
+        text-align: left;
+        margin-bottom: 17px;
+    }
+
+      // Медиа запрос для десктопов
+      @media (min-width: 1200px) {
+        font-size: 48px;
+        text-align: left; 
+        margin-bottom: 40px;
+        line-height: 58px;
+    }
+  }
+}
+
+.task-item-img {
+    width: 202px;
+
+     // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        width: 270px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        width: 356px;
+        margin-right: 0;
+    }   
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+
+.text-task {        
+
+    color: #808080;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+   
+     // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {   
+        line-height: 30px; 
+    }
+       
+}
+
+  
