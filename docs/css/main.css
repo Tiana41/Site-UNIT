@@ -98,9 +98,9 @@ body {
 .header {
   position: relative;
   height: auto;
+  background-image: url("../img/header/img-01.jpg");
   background-color: #414a4f;
   color: #ffffff;
-  background-image: url("../img/header/img-01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
