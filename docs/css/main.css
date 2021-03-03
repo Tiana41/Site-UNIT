@@ -412,7 +412,7 @@ body {
 @media (min-width: 1200px) {
   .section-functional {
     padding: 107px 0 60px;
-    background-image: url("/img/header/bg-particles.svg");
+    background-image: url("../img/header/bg-particles.svg");
     background-repeat: no-repeat;
     background-position: center 5px;
     background-size: auto;
@@ -592,7 +592,7 @@ br {
 }
 .section-action {
   position: relative;
-  background-image: url(/img/seaction/sta.jpg);
+  background-image: url("../img/seaction/sta.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -617,7 +617,7 @@ br {
 @media (min-width: 1200px) {
   .section-action {
     position: relative;
-    background-image: url(/img/seaction/app-business-computer-2265482.jpg);
+    background-image: url("../img/seaction/app-business-computer-2265482.jpg");
     padding-top: 82px;
     padding-bottom: 90px;
   }
@@ -1055,7 +1055,7 @@ img {
     position: relative;
     background-color: #414a4f;
     color: #ffffff;
-    background-image: url("/img/price/wes-hicks.jpg");
+    background-image: url("../img/price/wes-hicks.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1354,7 +1354,7 @@ img {
   .section-clients {
     padding-top: 103px;
     padding-bottom: 98px;
-    background-image: url("/img/carousel/BG.svg");
+    background-image: url("../img/carousel/BG.svg");
     background-repeat: no-repeat;
     background-position: center 156px;
     background-size: auto;
@@ -1505,7 +1505,7 @@ img {
 .clients-carousel.owl-carousel .owl-nav button.owl-prev {
   width: 52px;
   height: 52px;
-  background-image: url(/img/carousel/button_left.svg);
+  background-image: url("../img/carousel/button_left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1521,7 +1521,7 @@ img {
   .clients-carousel.owl-carousel .owl-nav button.owl-prev {
     width: 52px;
     height: 52px;
-    background-image: url(/img/carousel/button_left.svg);
+    background-image: url("../img/carousel/button_left.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -1539,7 +1539,7 @@ img {
   .clients-carousel.owl-carousel .owl-nav button.owl-prev {
     width: 52px;
     height: 52px;
-    background-image: url(/img/carousel/button_left.svg);
+    background-image: url("../img/carousel/button_left.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -1560,7 +1560,7 @@ img {
 .clients-carousel.owl-carousel .owl-nav button.owl-next {
   width: 52px;
   height: 52px;
-  background-image: url(/img/carousel/button_right.svg);
+  background-image: url("../img/carousel/button_right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1576,7 +1576,7 @@ img {
   .clients-carousel.owl-carousel .owl-nav button.owl-next {
     width: 52px;
     height: 52px;
-    background-image: url(/img/carousel/button_right.svg);
+    background-image: url("../img/carousel/button_right.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -1595,7 +1595,7 @@ img {
   .clients-carousel.owl-carousel .owl-nav button.owl-next {
     width: 52px;
     height: 52px;
-    background-image: url(/img/carousel/button_right.svg);
+    background-image: url("../img/carousel/button_right.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
